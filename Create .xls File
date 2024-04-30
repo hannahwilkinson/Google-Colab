@@ -1,0 +1,12 @@
+import xlwt
+
+#add a .xls file to the folder
+workbook = xlwt.Workbook()
+sheet = workbook.add_sheet('Sheet 1')
+sheet.write(0,1,'First text')
+
+#propmt for file name
+fileName = input("File Name: ")
+
+#will save as filename.xls
+workbook.save((fileName)+'.xls')
